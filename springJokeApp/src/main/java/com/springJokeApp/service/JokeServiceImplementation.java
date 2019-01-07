@@ -10,19 +10,27 @@ public class JokeServiceImplementation implements JokeService{
 	
 	private final ChuckNorrisQuotes quotes;
 	
-	
+	public JokeServiceImplementation(ChuckNorrisQuotes quotes) {
 
+		this.quotes = quotes;
+	}
+	
+	
+/*
 	public JokeServiceImplementation() {
 		this.quotes = new ChuckNorrisQuotes();
 	}
 
-
+*/
 
 	@Override
 	public String randomJoke() {
 		
 		return quotes.getRandomQuote();
 	}
+
+
+
 
 
 
